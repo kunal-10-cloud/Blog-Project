@@ -1,0 +1,146 @@
+.intro {
+  background: linear-gradient(to bottom right, #f9f9f9, #ffffff);
+  padding: 90px 0;
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  max-width: 1240px;
+  overflow: hidden;
+  position: relative;
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(240, 79, 53, 0.05);
+  z-index: 0;
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: rgba(14, 39, 72, 0.04);
+  z-index: 0;
+}
+
+.intro .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.intro-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro-header {
+  margin-bottom: 24px;
+}
+
+.intro h1 {
+  font-size: 3.2rem;
+  color: #0E2748;
+  margin-bottom: 18px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.intro .tagline {
+  font-size: 1.5rem;
+  color: #555;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+.intro-divider {
+  height: 3px;
+  width: 80px;
+  background: linear-gradient(to right, #F04F35, #f2735f);
+  margin: 0 auto 36px;
+  border-radius: 3px;
+}
+
+.intro-description {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.intro-description::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  font-size: 80px;
+  color: rgba(240, 79, 53, 0.1);
+  font-family: Georgia, serif;
+}
+
+.intro-description::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  font-size: 80px;
+  color: rgba(240, 79, 53, 0.1);
+  font-family: Georgia, serif;
+}
+
+.intro-description p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+.intro-description p:last-child {
+  font-style: italic;
+  color: #555;
+}
+
+@media (max-width: 992px) {
+  .intro {
+    padding: 70px 25px;
+    margin: 30px 20px;
+  }
+  
+  .intro h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    padding: 60px 20px;
+    margin: 25px 15px;
+    border-radius: 12px;
+  }
+  
+  .intro h1 {
+    font-size: 2.3rem;
+  }
+  
+  .intro .tagline {
+    font-size: 1.3rem;
+  }
+  
+  .intro-description p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+}
